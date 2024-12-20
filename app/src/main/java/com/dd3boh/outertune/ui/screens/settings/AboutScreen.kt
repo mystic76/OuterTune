@@ -75,7 +75,7 @@ fun AboutScreen(
             verticalAlignment = Alignment.Top,
         ) {
             Text(
-                text = "OuterTune",
+                text = "FlowTune",
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 8.dp, bottom = 4.dp)
@@ -84,7 +84,7 @@ fun AboutScreen(
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
-                text = "${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) | ${BuildConfig.FLAVOR}",
+                text = "${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) | Preview build",
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.secondary
             )
@@ -115,7 +115,7 @@ fun AboutScreen(
         Spacer(Modifier.height(4.dp))
 
         Text(
-            text = "By Davide Garberi & Michael Zh.",
+            text = "By abhiram79",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary
         )
@@ -124,7 +124,7 @@ fun AboutScreen(
 
         Row {
             IconButton(
-                onClick = { uriHandler.openUri("https://github.com/DD3Boh/OuterTune") }
+                onClick = { uriHandler.openUri("https://github.com/abhiram79/FlowTune") }
             ) {
                 Icon(
                     painter = painterResource(R.drawable.github),
@@ -139,7 +139,7 @@ fun AboutScreen(
             verticalAlignment = Alignment.Top,
         ) {
             Text(
-                text = "Special Thanks",
+                text = "FlowTune Pre Release",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 8.dp, bottom = 4.dp)
@@ -147,7 +147,7 @@ fun AboutScreen(
         }
 
         Text(
-            text = "Zion Huang for InnerTune",
+            text = "This is a preview version of FlowTune 0.1 , Many Bugs may occur and many features maybe missing stay tuned for the release version.",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary
         )
